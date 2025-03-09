@@ -34,10 +34,11 @@ section {
             opacity: 0;
             transition: opacity 0.5s ease;
             pointer-events: none;
+            filter: blur(10px);
         }
         &:hover::before,
         &:focus-within::before {
-            opacity: 0.6;
+            opacity: 0.3;
         }
     }
 }
