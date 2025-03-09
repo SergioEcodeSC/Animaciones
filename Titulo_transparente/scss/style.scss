@@ -1,3 +1,4 @@
+@import "__fonts"; 
 * {
     box-sizing: border-box;
     margin: 0;
@@ -55,7 +56,12 @@ section {
         color: white;
         text-align: center;
         font-weight: 700;
+        font-family: 'Romie-italic';
         user-select: none;
         mix-blend-mode: difference;
+        display: block;
+        font-style: italic;
+        box-sizing :content-box;
+        unicode-bidi: isolate;
     }
 }
