@@ -8,6 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     div.style.setProperty("--mouse-x", `${x}px`);
     div.style.setProperty("--mouse-y", `${y}px`);
-    div.style.setProperty("--spotlight-color", "rgba(255, 255, 255, 0.5)"); // Color arbitrario
+    div.style.setProperty("--spotlight-color", "rgb(253 152 152 / 57%)"); // Color arbitrario
     });
 });

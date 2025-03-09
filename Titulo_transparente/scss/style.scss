@@ -13,13 +13,48 @@ section {
     background-image: url(../img/descarga.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .ecoded_container{
+        position: relative;
+        width: 350px;
+        height: 300px;
+        border-radius: 20px;
+        background-color: rgba(128, 128, 128, 0.267);
+        border: 1px solid grey;
+        --mouse-x: 50%;
+        --mouse-y: 50%;
+        --spotlight-color: rgba(255, 255, 255, 0.548);
+        overflow: hidden;
+        padding: 20px;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--spotlight-color), transparent 80%);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            pointer-events: none;
+            filter: blur(10px);
+        }
+        &:hover::before,
+        &:focus-within::before {
+            opacity: 0.3;
+        }
+    }
     h1 {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 80px;
+        line-height: 92px;
         color: white;
         text-align: center;
-        font-size: 6rem;
-        font-weight: 900;
+        font-weight: 700;
         user-select: none;
         mix-blend-mode: difference;
     }
